@@ -4,15 +4,15 @@ public class HW_Temp {
 
     public static void main(String[] args) {
 
-        double celsius = 25;
+        double celsius1 = 25;
 
         // Celsius to Kelvin
-        double kelvin = celsius + 273.15;
-        System.out.println(kelvin);
+        double kelvin1 = celsius1 + 273.15;
+        System.out.println(kelvin1);
 
         // Celsius to Fahrenheit
-        double fahrenheit = (celsius * 9) / 5 + 32;
-        System.out.println(fahrenheit);
+        double fahrenheit1 = (celsius1 * 9) / 5 + 32;
+        System.out.println(fahrenheit1);
 
         double kelvin = 300;
 
