@@ -17,7 +17,7 @@
 //
 //        String replacement = myStatement.replace("r","f");
 //        System.out.println(replacement);
-//
+///       ________________________________________________________________________________________________________
 ////        2.
 //
 //        String fullName = "Mareeha Ferdowsi";
@@ -25,13 +25,13 @@
 //
 //        int fullNameLengthCount = fullName.codePointCount(1,16);
 //        System.out.println(fullNameLengthCount);
-//
+///      ________________________________________________________________________________________________________
 ////        3.
 //
 //        String[] names = {"Mohammad" , "John", "Ferdous" , "Abul" , "Ratna" , "Mareeha" , "Ruslan" , "Himani"};
 //        boolean verifyIndexOne = names.equals("JOHN");
 //        System.out.println(verifyIndexOne);
-//
+///       ________________________________________________________________________________________________________
 ////        4.
 //
 //        String [] friends = new String[5];
