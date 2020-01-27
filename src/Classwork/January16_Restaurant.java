@@ -10,36 +10,25 @@ public class January16_Restaurant {
      * 5. Create a method that printsRestaurantSummary
      */
 
-    private String name;
-    private int guestCapacity;
-    private int guestCount;
-    private int guestArrival;
-    private int guestLeft;
 
-    public void printRestaurantSummary () {
-        System.out.println("Name " + name);
-        System.out.println("Guest Capacity " + guestCapacity);
-        System.out.println("Guest Count " + guestCount);
-    }
+        private String name;
+        private int guestCapacity;
+        private int guestCount;
+        public January16_Restaurant(String name, int guestCapacity) {
+            this.name = name;
+            this.guestCapacity = guestCapacity;
+        }
 
-    public boolean seatsAvailable () {
-        boolean seatsAreAvailable = true;
-        boolean seatsAreNotAvailable = false;
+        public boolean isSeatAvailable(int partySize) {
+            int seatsLeft = guestCapacity - guestCount;
+            return partySize <= seatsLeft;
+        }
 
-        if (guestCapacity - guestCount < guestCapacity) {
-            return seatsAreAvailable;
-        } else {
-            return seatsAreNotAvailable;
+        public void seatParty(int partySize) { guestCount = guestCount + partySize; }
+
+        public void removeParty(int partySize) { guestCount = guestCount - partySize; }
+
+        public void printRestaurantSummary(){
+            System.out.println("Name: " + name + " Guest Capacity: " + guestCapacity + " GuestCount: " + guestCount);
         }
     }
-
-
-    public void setSeatsParty() {
-
-    }
-
-    public void hostOpening (String name, int guestCapacity) {
-        this.name = name;
-        this.guestCapacity = guestCapacity;
-    }
-}

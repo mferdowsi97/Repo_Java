@@ -7,45 +7,49 @@
 //public static void main(String[] args) {
 //
 //        getReversedString("Happy"); //1
+////_____________________________________________________________________
 //        double[] myArray = {30, 10, 90, 40};
 //        getReversedArray(myArray); //2
-
+ ////_____________________________________________________________________
 //        double[] arrayForSum = {2,4,6,8,10};
 //        addNumbersinArray(arrayForSum);//3
-//
+// ////_____________________________________________________________________
 //        double[] arrayToSort = {40,20,30,10};
 //        sortArrayInAscendingOrder(arrayToSort);//4
-//
+/////_____________________________________________________________________ /
 ////      double[] arrayForDesending ={40,20,30,10};
 ////      sortDesendingOrder(arrayForDesending);
-//
+/////_____________________________________________________________________ /
 //        double[] arrayForAverage = {20,40,60,80,100};
 //        findAverage(arrayForAverage);//5
-//
+////_____________________________________________________________________ /
 //        double[] arrayForMaximum = {20, 10, 40, 44, 32};
 //        findMaximum(arrayForMaximum);//6
-//
+////_____________________________________________________________________ /
 //        double[] arrayForMinimum = {20, 10, 40, 44, 32};
 //        findMinimum(arrayForMinimum);//7
-//
+ ////_____________________________________________________________________ //
 //        String wordForAbbreviation = "Happy New Year";
 //        findAbbreviation(wordForAbbreviation);//8
-//
+////_____________________________________________________________________ /
 //        int startNumber=2;
 //        int length=5;
 //        findFibonacciSeries(startNumber,length);//9
-//
+///_____________________________________________________________________ /
 //        double[] sMarks = {90, 89, 91, 67, 87, 88, 93, 90, 100, 81, 54};
 //        String [] sNames = {"Happy", "Peace" , "Jesse", "Kaitlin" , "Amir", "Donald", "Steven", "Vicky", "Hannah" , "David", "Gia"};
 //        findStudentWithHighestScore(sMarks, sNames);//10
-//
+////_____________________________________________________________________ //
 //        int sumUpTo = 5;
 //        findSumUpTo(sumUpTo);//11
 //        }
+////______________________________________________________________________________________________
+// QUESTIONS:
+////_____________________________________________________________________________________________
 
 //    *    1. Reverse a string
 // *        Eg: Input to method : Sample
-// *        Output/Return from method : elpmaS
+//        Output/Return from method : elpmaS
 
 //        public static String getReversedString(String myWord)
 //        {
@@ -60,6 +64,8 @@
 //        }
 
 
+
+////______________________________________________________________________________________________
 
 
 //*    2. Reverse an array (fyi: length of input array can vary)
@@ -76,7 +82,16 @@
 //        return reversedArray;
 //        }
 
+//OR
 
+//public static int[] reverseIntArray(int[] userGivenArr) {
+//        for (int i = userGivenArr.length - 1; i >= 0; i--) {
+//        System.out.print(userGivenArr[i] + " ");
+//        }
+//        return userGivenArr;
+//        }
+
+////______________________________________________________________________________________________
 
 
 // *    3. Add all numbers in a given array (fyi: length of input array can vary)
@@ -94,27 +109,29 @@
 //        return sum;
 //        }
 
+////______________________________________________________________________________________________
 //      4. *Sort an array
 // *    Eg: Input to method : [20, 10, 40, 44]
 // *    Output/Return from method : [10, 20, 40, 44]
 
 //    public static double[] sortArrayInAscendingOrder( double[] arrayToSort) {
 //        int n = arrayToSort.length;
-//        // One by one move boundary of unsorted subarray
+//                                             // One by one move boundary of unsorted subarray
 //        for (int i = 0; i < n-1; i++) {
-//        // Find the minimum element in unsorted array
+//                                            // Find the minimum element in unsorted array
 //        int min = i;
 //        for (int j = i+1; j < n; j++)
 //        if (arrayToSort[j] < arrayToSort[min])
 //        min = j;
-//        // Swap the found minimum element with the first
+//                                             // Swap the found minimum element with the first
 //        double temp = arrayToSort[i];
 //        arrayToSort[i] = arrayToSort[min];
 //        arrayToSort[min] = temp;
 //        }
 //        return arrayToSort;
-//        }
+//
 
+////______________________________________________________________________________________________
 // *    5. Find Average of a given array
 // *    Eg: Input to method : [20, 10, 40, 44]
 // *    Output/Return from method : 28.5
@@ -130,7 +147,7 @@
 //        System.out.println("The average is " + average);
 //        return average;
 //        }
-
+////______________________________________________________________________________________________
 //      6. Find maximum number in given array
 // *    Eg: Input to method : [20, 10, 40, 44, 32]
 // *    Output/Return from method : 44
@@ -150,7 +167,7 @@
 //        System.out.println("The maximum is " + maximum);
 //        return maximum;
 //        }
-
+////______________________________________________________________________________________________
 //      7. Find minimum number in given array
 // *    Eg: Input to method : [20, 10, 40, 44]
 // *    Output/Return from method : 10
@@ -170,7 +187,7 @@
 //        System.out.println("The minimum is " + minimum);
 //        return minimum;
 //        }
-
+////______________________________________________________________________________________________
 
 //      8. Create abbreviation for any string
 // *    Eg: Input to method : Outfit of the day ( or Good morning or Happy new year)
@@ -178,7 +195,7 @@
 
 //public static String findAbbreviation(String wordForAbbreviation)
 //        {
-//        String abbreviation = "HNY";
+//        String abbreviation = " ";
 //        String[] newArr = wordForAbbreviation.split("\\s");
 //        for (int i = 0; i < newArr.length; i++)
 //        {
@@ -188,8 +205,8 @@
 //        System.out.println("The abbreviation is " + abbreviation);
 //        return abbreviation;
 //        }
-
-//        9. Fabinisco problem
+////______________________________________________________________________________________________
+//        9. Fibonacci Series problem
 
 //public static int[] findFibonacciSeries(int startNumber, int length)
 //        {
@@ -215,7 +232,7 @@
 //        }
 //        System.out.println();
 //        }
-
+ ////______________________________________________________________________________________________
 
 //       10. Given two arrays, one contains total marks of 11 students of a class; second array contains their names in same order as marks-array.
 //           double[] sMarks = {90, 89, 91, 67, 87, 88, 93, 90, 100, 81, 54};
@@ -241,6 +258,7 @@
 //        System.out.println("The highest scorer is " + highestScorer);
 //        return highestScorer;
 //        }
+////______________________________________________________________________________________________
 
 // *    11. Create a method to add numbers from 0 to given number, and return the result
 //          Example : addUpto(5) -> method should return 15 (bcz, 0+1+2+3+4+5 = 15)
